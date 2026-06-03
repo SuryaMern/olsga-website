@@ -12,8 +12,8 @@ const contactInfo = [
   },
   {
     label: 'Email',
-    value: 'Connect@olsga.com',
-    href: 'mailto:Connect@olsga.com',
+    value: 'Connect@smaft.com',
+    href: 'mailto:Connect@smaft.com',
     icon: (
       <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -30,6 +30,16 @@ const contactInfo = [
       </svg>
     ),
   },
+  {
+    label: 'Availability',
+    value: 'Available 24×7 for urgent engineering support',
+    href: null,
+    icon: (
+      <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+  },
 ]
 
 export default function Contact() {
@@ -43,11 +53,10 @@ export default function Contact() {
           <div>
             <span className="text-sm font-semibold uppercase tracking-widest text-accent-light">Contact Us</span>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Let&apos;s Discuss Your Engineering Needs
+              Ready to discuss your engineering or IT project?
             </h2>
             <p className="mt-4 text-lg text-white/50">
-              Ready to optimize your valve designs or need expert FEA analysis? Reach out to our
-              engineering team for a consultation.
+              Contact us for a free initial consultation on your engineering project.
             </p>
 
             <div className="mt-10 space-y-4">
@@ -85,53 +94,80 @@ export default function Contact() {
               <div className="grid gap-5 sm:grid-cols-2">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-white/70">
-                    Full Name
+                    Name
                   </label>
                   <input
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="John Doe"
+                    defaultValue="Mahendran S"
                     className="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/30 outline-none transition-all duration-300 focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
                   />
                 </div>
                 <div>
+                  <label htmlFor="company" className="block text-sm font-medium text-white/70">
+                    Company
+                  </label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    defaultValue="SMAFT Technology Solutions"
+                    className="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/30 outline-none transition-all duration-300 focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
+                  />
+                </div>
+              </div>
+
+              <div className="grid gap-5 sm:grid-cols-2">
+                <div>
                   <label htmlFor="email" className="block text-sm font-medium text-white/70">
-                    Email Address
+                    Email
                   </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="john@company.com"
+                    defaultValue="Connect@smaft.com"
+                    className="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/30 outline-none transition-all duration-300 focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-white/70">
+                    Phone
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    defaultValue="+91 9342821035"
                     className="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/30 outline-none transition-all duration-300 focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm font-medium text-white/70">
-                  Company
+                <label htmlFor="project-description" className="block text-sm font-medium text-white/70">
+                  Project Description
                 </label>
-                <input
-                  type="text"
-                  id="company"
-                  name="company"
-                  placeholder="Your Company"
-                  className="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/30 outline-none transition-all duration-300 focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
+                <textarea
+                  id="project-description"
+                  name="project-description"
+                  rows={4}
+                  defaultValue="Engineering Services and Consultancy"
+                  className="mt-2 w-full resize-none rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/30 outline-none transition-all duration-300 focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-white/70">
-                  Message
+                <label htmlFor="contact-method" className="block text-sm font-medium text-white/70">
+                  Preferred Contact Method
                 </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  placeholder="Tell us about your project requirements..."
-                  className="mt-2 w-full resize-none rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/30 outline-none transition-all duration-300 focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
+                <input
+                  type="text"
+                  id="contact-method"
+                  name="contact-method"
+                  defaultValue="Monday to Friday 9AM – 5PM"
+                  className="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/30 outline-none transition-all duration-300 focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
                 />
               </div>
 

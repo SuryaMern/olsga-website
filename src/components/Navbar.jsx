@@ -1,9 +1,13 @@
 import { useState, useEffect } from 'react'
+import Logo from './Logo'
 
 const navLinks = [
+  { label: 'Home', href: '#hero' },
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
-  { label: 'Industries', href: '#industries' },
+  { label: 'Why Choose Us', href: '#why-choose-us' },
+  { label: 'Process', href: '#process' },
+  { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -35,22 +39,11 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="#" className="group flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 ring-1 ring-accent/30 transition-all duration-300 group-hover:bg-accent/20 group-hover:ring-accent/50">
-            <svg viewBox="0 0 24 24" className="h-5 w-5 text-accent" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M12 2L2 7l10 5 10-5-10-5z" />
-              <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
-            </svg>
-          </div>
-          <div>
-            <span className="block text-lg font-bold tracking-tight text-white">OLSGA</span>
-            <span className="block text-[10px] font-medium uppercase tracking-widest text-accent-light/80">
-              Technology Solutions
-            </span>
-          </div>
+        <a href="#hero" className="group">
+          <Logo />
         </a>
 
-        <ul className="hidden items-center gap-8 md:flex">
+        <ul className="hidden items-center gap-6 xl:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
@@ -67,7 +60,7 @@ export default function Navbar() {
           href="#contact"
           className="hidden rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent-light hover:shadow-accent/40 md:inline-block"
         >
-          Get in Touch
+          Get In Touch
         </a>
 
         <button
@@ -92,13 +85,13 @@ export default function Navbar() {
           isOpen ? 'visible opacity-100' : 'invisible opacity-0'
         }`}
       >
-        <div className="flex h-full flex-col items-center justify-center gap-8">
+        <div className="flex h-full flex-col items-center justify-center gap-6 px-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={handleNavClick}
-              className="text-2xl font-semibold text-white/80 transition-colors hover:text-accent"
+              className="text-xl font-semibold text-white/80 transition-colors hover:text-accent"
             >
               {link.label}
             </a>
@@ -108,7 +101,7 @@ export default function Navbar() {
             onClick={handleNavClick}
             className="mt-4 rounded-lg bg-accent px-8 py-3 text-lg font-semibold text-white"
           >
-            Get in Touch
+            Get In Touch
           </a>
         </div>
       </div>

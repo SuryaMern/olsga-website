@@ -13,27 +13,33 @@ export default function Hero() {
       <div className="absolute top-1/4 right-0 hidden h-px w-1/3 bg-gradient-to-l from-accent/50 to-transparent lg:block" />
       <div className="absolute bottom-1/3 left-0 hidden h-px w-1/4 bg-gradient-to-r from-accent/30 to-transparent lg:block" />
 
-      <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-        <div className="grid items-center gap-16 lg:grid-cols-2">
-          <div className="animate-fade-in-up">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5">
+      <div className="relative mx-auto max-w-7xl px-6 py-28 lg:px-8 lg:py-36">
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-14 xl:gap-16">
+          <div className="animate-fade-in-up lg:max-w-xl xl:max-w-2xl lg:py-2 xl:pr-6">
+            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5">
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
               <span className="text-xs font-semibold uppercase tracking-widest text-accent-light">
-                Engineering Excellence
+                SMAFT Technology Solutions
               </span>
             </div>
 
-            <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-[3.25rem] lg:leading-[1.15]">
-              Precision Valve Design &{' '}
-              <span className="bg-gradient-to-r from-accent-light to-accent bg-clip-text text-transparent">
-                Finite Element Analysis
-              </span>{' '}
-              Engineering Services and Solutions
+            <h1 className="max-w-[16.5em] text-[2.35rem] font-extrabold leading-[1.15] tracking-tight text-pretty text-white sm:max-w-none sm:text-[2.75rem] sm:leading-[1.1] md:text-6xl lg:text-[3.75rem] lg:leading-[1.08] xl:text-[4.125rem]">
+              <span className="block sm:inline">Engineering Services and Consultancy for </span>
+              <span className="block bg-gradient-to-r from-accent-light to-accent bg-clip-text text-transparent sm:inline">
+                Reliable &amp; Smarter{' '}
+              </span>
+              <span className="block sm:inline">Industrial Solutions</span>
             </h1>
 
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/60">
-              Specialized engineering consultancy delivering reliable valve solutions and advanced FEA
-              simulations for industrial applications under extreme conditions.
+            <p className="mt-10 max-w-xl text-lg font-medium leading-relaxed text-white/70 sm:mt-12">
+              Specialized support in Design, Analysis, Simulation, Automation and Technical Consulting
+              for Industrial and Mechanical Projects including IT Services.
+            </p>
+
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-white/55 lg:max-w-lg">
+              We help businesses solve engineering challenges with practical design support, analysis,
+              automation and consultancy services including IT Services that improve performance,
+              reliability, and efficiency.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -61,9 +67,9 @@ export default function Hero() {
 
             <div className="mt-14 grid grid-cols-3 gap-6 border-t border-white/10 pt-10">
               {[
-                { value: 'API 600', label: 'Standards' },
-                { value: 'FEA', label: 'Simulation' },
-                { value: '24/7', label: 'Support' },
+                { value: 'FEA', label: 'Analysis' },
+                { value: 'IT', label: 'Services' },
+                { value: '24×7', label: 'Support' },
               ].map((stat) => (
                 <div key={stat.label}>
                   <div className="text-2xl font-bold text-white">{stat.value}</div>
@@ -75,51 +81,29 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative hidden lg:block">
-            <div className="relative aspect-square max-w-lg mx-auto">
-              <div className="absolute inset-0 rounded-2xl border border-white/10 bg-gradient-to-br from-navy-800/80 to-navy-900/80 backdrop-blur-sm" />
+          <div className="relative hidden lg:flex lg:min-h-[32rem] lg:flex-1 lg:items-center lg:justify-center xl:min-h-[36rem]">
+            <div className="absolute top-1/2 left-1/2 h-[95%] w-[95%] max-h-[520px] max-w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/15 blur-3xl animate-pulse-glow" />
+            <div className="animate-float-subtle relative w-full max-w-[45rem] xl:max-w-[52.5rem]">
+              <div className="absolute inset-0 rounded-3xl border border-white/10 bg-gradient-to-br from-navy-800/90 to-navy-900/90 shadow-2xl shadow-navy-950/60 backdrop-blur-sm ring-1 ring-white/5" />
 
-              <svg viewBox="0 0 400 400" className="relative h-full w-full p-8" fill="none">
-                <circle cx="200" cy="200" r="160" stroke="rgba(59,130,246,0.2)" strokeWidth="1" strokeDasharray="8 4" />
-                <circle cx="200" cy="200" r="120" stroke="rgba(59,130,246,0.15)" strokeWidth="1" />
-                <circle cx="200" cy="200" r="80" stroke="rgba(59,130,246,0.3)" strokeWidth="2" />
-
-                <rect x="140" y="170" width="120" height="60" rx="4" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.5)" strokeWidth="2" />
-                <rect x="110" y="185" width="30" height="30" rx="2" fill="rgba(59,130,246,0.15)" stroke="rgba(59,130,246,0.4)" strokeWidth="1.5" />
-                <rect x="260" y="185" width="30" height="30" rx="2" fill="rgba(59,130,246,0.15)" stroke="rgba(59,130,246,0.4)" strokeWidth="1.5" />
-                <circle cx="200" cy="200" r="15" fill="rgba(59,130,246,0.3)" stroke="rgba(96,165,250,0.8)" strokeWidth="2" />
-
-                {[0, 45, 90, 135, 180, 225, 270, 315].map((angle) => {
-                  const rad = (angle * Math.PI) / 180
-                  const x1 = 200 + 80 * Math.cos(rad)
-                  const y1 = 200 + 80 * Math.sin(rad)
-                  const x2 = 200 + 160 * Math.cos(rad)
-                  const y2 = 200 + 160 * Math.sin(rad)
-                  return (
-                    <line
-                      key={angle}
-                      x1={x1}
-                      y1={y1}
-                      x2={x2}
-                      y2={y2}
-                      stroke="rgba(59,130,246,0.15)"
-                      strokeWidth="1"
-                    />
-                  )
-                })}
-
-                <text x="200" y="340" textAnchor="middle" fill="rgba(255,255,255,0.4)" fontSize="11" fontFamily="Inter, sans-serif" letterSpacing="2">
-                  VALVE ENGINEERING
-                </text>
-              </svg>
-
-              <div className="absolute -top-4 -right-4 rounded-lg border border-accent/30 bg-navy-800/90 px-4 py-3 backdrop-blur-sm">
-                <div className="text-xs text-white/50">Pressure Rating</div>
-                <div className="text-lg font-bold text-accent-light">Class 2500</div>
+              <div className="relative flex w-full flex-col items-center justify-center px-10 py-14 xl:px-14 xl:py-16">
+                <img
+                  src="/hero.png"
+                  alt="SMAFT Technology Solutions logo"
+                  className="max-h-[22.5rem] w-full max-w-[min(100%,22.5rem)] object-contain drop-shadow-[0_0_56px_rgba(59,130,246,0.35)] xl:max-h-[24.2rem] xl:max-w-[min(100%,24.2rem)]"
+                />
+                <p className="mt-8 text-center text-xs font-medium uppercase tracking-[0.2em] text-white/45">
+                  Engineering Automation Consultancy
+                </p>
               </div>
-              <div className="absolute -bottom-4 -left-4 rounded-lg border border-accent/30 bg-navy-800/90 px-4 py-3 backdrop-blur-sm">
-                <div className="text-xs text-white/50">Analysis Type</div>
-                <div className="text-lg font-bold text-accent-light">Nonlinear FEA</div>
+
+              <div className="absolute -top-5 -right-5 rounded-xl border border-accent/30 bg-navy-800/95 px-5 py-3.5 shadow-lg shadow-navy-950/40 backdrop-blur-sm">
+                <div className="text-xs text-white/50">Focus</div>
+                <div className="text-lg font-bold text-accent-light">Industrial</div>
+              </div>
+              <div className="absolute -bottom-5 -left-5 rounded-xl border border-accent/30 bg-navy-800/95 px-5 py-3.5 shadow-lg shadow-navy-950/40 backdrop-blur-sm">
+                <div className="text-xs text-white/50">Expertise</div>
+                <div className="text-lg font-bold text-accent-light">Design &amp; IT</div>
               </div>
             </div>
           </div>
