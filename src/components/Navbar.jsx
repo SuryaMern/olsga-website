@@ -4,10 +4,12 @@ import Logo from './Logo'
 const navLinks = [
   { label: 'Home', href: '#hero' },
   { label: 'About', href: '#about' },
+  { label: 'Vision', href: '#vision-mission' },
   { label: 'Services', href: '#services' },
   { label: 'Why Choose Us', href: '#why-choose-us' },
   { label: 'Process', href: '#process' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Careers', href: '#careers' },
   { label: 'Contact', href: '#contact' },
 ]
 

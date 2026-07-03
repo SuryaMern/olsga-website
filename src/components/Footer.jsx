@@ -3,10 +3,12 @@ import Logo from './Logo'
 const footerLinks = [
   { label: 'Home', href: '#hero' },
   { label: 'About', href: '#about' },
+  { label: 'Vision & Mission', href: '#vision-mission' },
   { label: 'Services', href: '#services' },
   { label: 'Why Choose Us', href: '#why-choose-us' },
   { label: 'Process', href: '#process' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Careers', href: '#careers' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -20,7 +22,7 @@ export default function Footer() {
           <div>
             <Logo />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/40">
-              Engineering Services and Consultancy for Reliable &amp; Smarter Industrial Solutions
+              Engineering Your Success, Digitally Transforming Your Business
             </p>
           </div>
 
