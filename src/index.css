@@ -64,3 +64,8 @@ body {
 .animate-float-subtle {
   animation: float-subtle 5.5s ease-in-out infinite;
 }
+
+.logo-crisp {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}

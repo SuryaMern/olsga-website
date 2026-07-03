@@ -1,3 +1,5 @@
+import { LogoMark } from './Logo'
+
 export default function About() {
   return (
     <section id="about" className="relative bg-white py-24 lg:py-32">
@@ -20,11 +22,7 @@ export default function About() {
             </p>
 
             <div className="mt-10 flex items-center gap-4">
-              <img
-                src="/hero.png"
-                alt="SMAFT Technology Solutions"
-                className="h-16 w-auto max-w-[180px] object-contain"
-              />
+              <LogoMark variant="light" className="h-16 w-auto max-w-[180px]" />
               <div>
                 <div className="font-semibold text-navy-900">SMAFT Technology Solutions</div>
                 <div className="text-sm text-navy-500">Salem, Tamil Nadu, India</div>

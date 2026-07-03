@@ -1,3 +1,5 @@
+import { LogoMark } from './Logo'
+
 export default function Hero() {
   return (
     <section
@@ -86,11 +88,10 @@ export default function Hero() {
             <div className="animate-float-subtle relative w-full max-w-[45rem] xl:max-w-[52.5rem]">
               <div className="absolute inset-0 rounded-3xl border border-white/10 bg-gradient-to-br from-navy-800/90 to-navy-900/90 shadow-2xl shadow-navy-950/60 backdrop-blur-sm ring-1 ring-white/5" />
 
-              <div className="relative flex w-full flex-col items-center justify-center px-10 py-14 xl:px-14 xl:py-16">
-                <img
-                  src="/hero.png"
-                  alt="SMAFT Technology Solutions logo"
-                  className="max-h-[22.5rem] w-full max-w-[min(100%,22.5rem)] object-contain drop-shadow-[0_0_56px_rgba(59,130,246,0.35)] xl:max-h-[24.2rem] xl:max-w-[min(100%,24.2rem)]"
+              <div className="relative flex w-full flex-col items-center justify-center px-6 py-10 xl:px-10 xl:py-12">
+                <LogoMark
+                  variant="hero"
+                  className="max-h-[20rem] w-full max-w-[min(100%,20rem)] xl:max-h-[22rem] xl:max-w-[min(100%,22rem)]"
                 />
                 <p className="mt-8 text-center text-xs font-medium uppercase tracking-[0.2em] text-white/45">
                   Engineering Automation Consultancy
