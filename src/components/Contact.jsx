@@ -12,8 +12,8 @@ const contactInfo = [
   },
   {
     label: 'Email',
-    value: 'Connect@smaft.com',
-    href: 'mailto:Connect@smaft.com',
+    value: 'connect@smaft.in',
+    href: 'mailto:connect@smaft.in',
     icon: (
       <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -127,7 +127,7 @@ export default function Contact() {
                     type="email"
                     id="email"
                     name="email"
-                    defaultValue="Connect@smaft.com"
+                    defaultValue="connect@smaft.in"
                     className="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-white/30 outline-none transition-all duration-300 focus:border-accent/50 focus:ring-2 focus:ring-accent/20"
                   />
                 </div>

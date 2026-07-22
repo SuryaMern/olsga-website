@@ -47,8 +47,8 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-white/40">
               <li>Salem, Tamil Nadu, India</li>
               <li>
-                <a href="mailto:Connect@smaft.com" className="transition-colors hover:text-accent-light">
-                  Connect@smaft.com
+                <a href="mailto:connect@smaft.in" className="transition-colors hover:text-accent-light">
+                  connect@smaft.in
                 </a>
               </li>
               <li>

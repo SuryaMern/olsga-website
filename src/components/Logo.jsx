@@ -12,7 +12,7 @@ function LogoImage({ className }) {
         srcSet={logoSources.png}
         alt="SMAFT Technology Solutions"
         width={1024}
-        height={961}
+        height={1024}
         decoding="async"
         className={`logo-crisp object-contain object-left ${className}`}
       />
@@ -21,9 +21,9 @@ function LogoImage({ className }) {
 }
 
 const plateStyles = {
-  dark: 'rounded-xl bg-[#eef2f6] px-2.5 py-1.5 shadow-lg shadow-black/25 ring-1 ring-white/15',
+  dark: 'rounded-xl bg-white px-2.5 py-1.5 shadow-lg shadow-black/25 ring-1 ring-white/20',
   light: '',
-  hero: 'rounded-2xl bg-[#eef2f6] px-8 py-6 shadow-2xl shadow-navy-950/50 ring-1 ring-white/20 sm:px-10 sm:py-8',
+  hero: 'rounded-2xl bg-white px-8 py-6 shadow-2xl shadow-navy-950/50 ring-1 ring-white/25 sm:px-10 sm:py-8',
 }
 
 export default function Logo({
